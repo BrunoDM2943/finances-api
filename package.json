@@ -1,0 +1,30 @@
+{
+  "name": "finances-api",
+  "version": "1.0.0",
+  "description": "A simple API to control finances",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoDM2943/finances-api.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "express",
+    "js",
+    "api"
+  ],
+  "author": "BrunoDM2943 <bdm2943@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoDM2943/finances-api/issues"
+  },
+  "homepage": "https://github.com/BrunoDM2943/finances-api#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.1.8"
+  }
+}
