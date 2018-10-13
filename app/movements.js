@@ -38,8 +38,10 @@ function get(req, res) {
     db.collection(collection).findOne({_id: ObjectID(id), "user": user}, function(err,result) {
         if (err != null) {
             res.send(err);
-        } else {
-            res.status(200).send({movement:result});  
+        } else if (result == null) {
+            res.status(404).send();
+        }else{
+            res.status(200).send(result);  
         }
     });
 }
@@ -56,7 +58,7 @@ function update(req, res) {
         if (err != null) {
             res.send(err);
         } else {
-            res.status(200).send({msg:"Movemente updated", doc: r.value});  
+            res.status(200).send(r.value);  
         }
     });
 }
