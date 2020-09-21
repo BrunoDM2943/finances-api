@@ -26,6 +26,6 @@
   "homepage": "https://github.com/BrunoDM2943/finances-api#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "mongodb": "^3.1.8"
+    "mongodb": "^3.1.13"
   }
 }
